@@ -14,7 +14,7 @@
         }
 
         .profile-img {
-            width: 324px; /* Half the original size */
+            width: 324px; /* Fixed size for the circular image container */
             height: 324px; /* Keep it square to ensure circular shape */
             border-radius: 50%; /* Makes the image circular */
             overflow: hidden; /* Ensures the image is clipped to fit the circle */
@@ -24,7 +24,7 @@
         .profile-img img {
             width: 100%;  /* Ensure the image stretches to the full width of the container */
             height: 100%; /* Ensure the image stretches to the full height of the container */
-            object-fit: cover; /* This ensures the image maintains its aspect ratio while filling the container */
+            object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the container */
         }
 
         .header-text {
@@ -45,8 +45,7 @@
                 <header id="header">
                     <!-- Image -->
                     <div class="profile-img">
-                        <!-- Directly resizing the image using width and height attributes -->
-                        <img src="images/cropped-image.jpg" alt="Emma R. Beasor" >
+                        <img src="images/cropped-image.jpg" alt="Emma R. Beasor">
                     </div>
 
                     <!-- Text -->
