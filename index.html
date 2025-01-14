@@ -10,16 +10,18 @@
         #header {
             display: flex;
             align-items: center;
-            gap: 1px; /* Space between the image and text */
+            gap: 20px; /* Adjust the space between the image and text */
         }
-.profile-img img {
-    max-width: 500px;
-    max-height: 500px;
-    width: auto;
-    height: auto;
-}
+
+        .profile-img img {
+            max-width: 300px; /* Limit the size of the image */
+            width: 100%; /* Make the image responsive */
+            height: auto;
+        }
+
         .header-text {
-            width: 1700px;
+            max-width: 900px; /* Adjust to fit the text, preventing it from stretching too wide */
+            width: auto;
         }
     </style>
 </head>
@@ -49,7 +51,9 @@
                         <p>Bart J. Bok Fellow, University of Arizona, 2022 - 2024</p>
                         <p>NASA Hubble Fellow, NOIRLab, 2019 - 2022</p>
                         <p>
-                            <ul class="icon solid fa-envelope"> <li><a href="#">E.R.Beasor [at] ljmu.ac.uk</a></li>  </ul>
+                            <ul class="icon solid fa-envelope">
+                                <li><a href="#">E.R.Beasor [at] ljmu.ac.uk</a></li>
+                            </ul>
                         </p>
                     </div>
                 </header>
